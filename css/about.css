@@ -1,0 +1,100 @@
+body {
+    background-color: #f4f1ea;
+}
+
+.case-studies {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.case-studies-container {
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 3%;
+    height: -webkit-fill-available;
+    height: -moz-available;
+}
+
+.case-studies-container > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.case-top-header {
+    display: flex;
+    gap: 2vw;
+}
+
+.case-top-header > .case-top-header {
+    flex: 1;
+}
+
+.case-top-header h2 {
+    width: fit-content;
+    font-size: 2vw;
+    line-height: 2;
+}
+
+.case-top-header h2::after {
+    content: "";
+}
+
+.case-top-space {
+    height: 100%;
+    flex: 1;
+    background-color: #234851;
+    border-top-left-radius: 2vw;
+    border-top-right-radius: 2vw;
+    
+}
+
+.case-containers {
+    display: flex;
+    flex-direction: column;
+    min-height: unset;
+    background-color: #234851;
+    border-radius: 2vw;
+    border-top-right-radius: 0;
+}
+
+.case-studies-2 .case-top-space ,
+.case-studies-2 .case-containers {
+    background-color: #ffffff;
+}
+
+.case-content {
+    padding: 1.5vw 2vw;
+}
+
+.case-content span {
+
+}
+
+.case-content p {
+    margin-top: 2%;
+    font-weight: bold;
+}
+
+.case-studies-1 .case-content span {
+    color: #85b5b0;
+}
+
+.case-studies-1 .case-content p {
+    color: #dbe9e4;
+}
+
+.case-containers .mission-vision {
+    margin: 5% 5% 5% auto;
+}
+
+.case-studies-1 .mission-vision:hover {
+    color: #ffffff;
+}
+.case-studies-1 .mission-vision:hover .circle {
+    border-color: #ffffff;
+}

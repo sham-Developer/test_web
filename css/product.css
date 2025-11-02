@@ -1,0 +1,158 @@
+body {
+    background-color: #f4f1ea;
+}
+
+.product-flex-outer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    padding: 8% 3% 0 3%;
+    margin-bottom: 3%;
+    min-height: 100vh;
+}
+
+.product-flex-outer-container h1 {
+    font-size: 3vw;
+    color: #dc2827;
+}
+
+.product-flex-outer-container p {
+    width: 50%;
+    margin: 1% 0;
+}
+
+.product-flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex: 1; */
+    margin-top: 2%;
+}
+
+
+.product-left-container {
+    flex: 1.5;
+}
+
+.product-right-container {
+    flex: 1;
+    height: -webkit-fill-available;
+    height: -moz-available;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.product-features-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-feature-row {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin-top: 2%;
+    padding: 2% 0 0 0;
+    border-top: 1px solid #ccc;
+}
+
+.product-feature-type {
+    font-weight: bold;
+    color: #792d2d;;
+}
+
+.product-feature-row > div {
+    flex: 1;
+}
+
+.product-image {
+    background-color: #ffffff;
+    border-radius: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-image img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+.color-flex-container {
+    display: flex;
+    height: 100%;
+    gap: 2%;
+}
+
+.color-flex-container > div {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.color-flex-container .black {
+    background-color: #000;
+    border: 1px solid #000;
+}
+
+.color-flex-container .white {
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+.color-flex-container .transparent {
+    background-color: transparent;
+    border: 1px solid #000;
+}
+
+.color-flex-container .wireframe {
+    background-color: transparent;
+    border: 1px solid #000;
+}
+
+@media screen and (max-width: 991px) {
+
+    .product-flex-outer-container h1 {
+        text-align: center;
+        font-size: 5vw;
+    }
+
+    .product-flex-outer-container {
+padding: 15% 3% 0 3%;
+    }
+
+.product-flex-container {
+    flex-direction: column-reverse;
+    width: 90%;
+    margin: 3% auto;
+    gap: 5vw;
+}
+
+.product-features-details {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.product-left-container {
+    flex: 1;
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 600px) {
+  .product-flex-outer-container h1 {
+    text-align: center;
+    font-size: 5.75vw;
+    margin-top: 2.5rem;
+}
+
+.color-flex-container {
+    gap: 5%;
+}
+}
